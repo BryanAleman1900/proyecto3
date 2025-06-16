@@ -81,7 +81,7 @@ public class UserRestController {
             return new GlobalResponseHandler().handleResponse("User deleted successfully",
                     foundOrder.get(), HttpStatus.OK, request);
         } else {
-            return new GlobalResponseHandler().handleResponse("Order id " + userId + " not found"  ,
+            return new GlobalResponseHandler().handleResponse("User id " + userId + " not found"  ,
                     HttpStatus.NOT_FOUND, request);
         }
     }
